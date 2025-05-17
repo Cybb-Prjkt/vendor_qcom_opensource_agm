@@ -1,4 +1,5 @@
 LOCAL_PATH := $(call my-dir)
+ifneq ($(QCPATH),)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE        := libagmmixer
@@ -267,3 +268,5 @@ LOCAL_SHARED_LIBRARIES += \
     libagmmixer
 
 include $(BUILD_EXECUTABLE)
+
+endif
